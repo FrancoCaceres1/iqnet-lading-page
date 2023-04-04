@@ -51,7 +51,7 @@ body {
 
 }
 
-@media (mind-width:768px){
+@media (min-width:768px){
     .boton{
         width: auto;
     }
@@ -66,7 +66,6 @@ body {
     background-color: var(--blanco);
     padding: 2rem;
     border-radius: 1rem;
-
 }
 
 /*Tipografia*/
@@ -176,13 +175,7 @@ justify-content: center;
 /*Servicios*/
 @media (min-width: 768px){
 .servicios {
-    display: grid;    /*
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 200px 800px;
-    */
-    /*grid: 200px 800px / 300px 300px;*/
-    /*grid-template-columns: 33.3% 33.3% 33.3%;*/
-    /*grid-template-columns: 1fr 3fr 1fr;*/
+    display: grid;
     grid-template-columns: repeat(3,1fr);
     column-gap: 2rem;
     }

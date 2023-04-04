@@ -8,7 +8,7 @@
 
   if(!$enlace) {
     echo"Erro en la conexion con el servidor";
-  }
+  } 
 ?>
 
 <!DOCTYPE html>
@@ -18,14 +18,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="img/LogoICO.ico">
+  <link rel="icon" href="resources/img/LogoICO.ico">
   <title>IQNet Comunicaciones</title>
-  <link rel="preload" href="css/normalize.css">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preload" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/normalize.css">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="">
-  <link rel="preload" href="css/styles.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preload" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
 
 </head>
 
@@ -41,7 +40,7 @@
       <a href="#">Sobre nosotros</a>
       <a href="#">Clientes</a>
       <a href="#formulario">Contacto</a>
-      <a href="#">Ayuda</a>
+      <a href="admin.php">Ayuda</a>
     </nav>
   </div>
 
@@ -161,7 +160,7 @@
     </section>
   </main>
   <footer class="footer">
-    <p>Todos los derechos reservados - Walter Daniel Cacecres Cusolito</p>
+    <p>Todos los derechos reservados - Walter Daniel Cáceres Cusolito</p>
   </footer>
 
 
@@ -172,11 +171,11 @@
 <?php
 
   if (isset($_POST['enviar'])) {
-    $id = "";
     $nombre = $_POST["nombre"];
     $correo = $_POST["correo"];
     $telefono = $_POST["telefono"];
     $mensaje = $_POST["mensaje"]; 
+    $id = $_POST[""];
     
     $insertarDatos  = "INSERT INTO contacto VALUES('$id', '$nombre', '$telefono', '$correo', '$mensaje')";
 
