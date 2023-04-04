@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8d8d8d;
+}
+
+form {
+  margin-top: 5rem;
+  border: 3px solid #f1f1f1;
+  padding: 16px;
+  background-color: #f39404;
+  border-radius: 15px;
+}
+
+.admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 5rem;
+  padding-top: 0.4rem;
+  color: #363535;
+  gap: 0.5rem;
+}
+
+.admin h3 {
+  font-size: 55px;
+}
+
+.admin span {
+  font-size: 28px;
+  position: relative;
+  bottom: -10px;
+}
+
+.datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+  background-color: #363535;
+  padding: 0.5rem 1rem 1rem 1rem;
+  border-radius: 5px;
+}
+
+.login {
+  padding: 0.5rem 0rem;
+  background-color: rgb(36, 78, 216);
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  color: white;
+  font-size: 17px;
+  transition: 0.3s all;
+}
+
+.login:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.text1 {
+  height: 2rem;
+  border: none;
+  border-radius: 2px;
+  padding: 0rem 0.8rem;
+}
+
+.text2 {
+  height: 2rem;
+  border: none;
+  border-radius: 2px;
+  padding: 0rem 0.8rem;
+}
+
+.user {
+  padding: 0.5rem 0rem;
+  color: #f1f1f1;
+  font-size: 18px;
+}
+
+.pass {
+  padding: 0.5rem 0rem;
+  color: #f1f1f1;
+  font-size: 18px;
+}
+
+.div-span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.8rem;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  color: crimson;
+}
+
+.error {
+  padding: 0.3rem 0rem;
+}

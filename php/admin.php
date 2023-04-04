@@ -11,13 +11,20 @@
   } else
 ?>
 
+<?php 
+
+  session_start();
+  if(isset($_SESSION["usuario"])) {
+
+?>  
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/admin.css">
+  <link rel="stylesheet" href="../styles/admin.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
@@ -25,7 +32,12 @@
 </head>
 <body>
   <header>
-      <h1>IQNet<span>Management</span></h1>
+    <div class="div-header">
+      <div class="texto">
+        <h1>IQNet</h1><span>Management</span>
+      </div>
+      <a href="salir.php">Log Out</a>
+    </div>
   </header>
   <section>
   <table class="tabla-contactos" border="4" cellspacing="1" style="border-collapse: collapse" bordercolor="#111111" width="100%" height="100%">
@@ -34,6 +46,7 @@
       <td>Phone</td>
       <td>Email</td>
       <td>Message</td>
+      <td></td>
     </tr>
 
     <?php
@@ -76,3 +89,9 @@
   </section>
 </body>
 </html>
+
+<?php
+  } else {
+    header("location:login.php");
+  }
+?>

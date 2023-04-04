@@ -40,7 +40,7 @@
       <a href="#">Sobre nosotros</a>
       <a href="#">Clientes</a>
       <a href="#formulario">Contacto</a>
-      <a href="admin.php">Ayuda</a>
+      <a href="php\login.php">Iniciar Sesión</a>
     </nav>
   </div>
 
@@ -175,9 +175,9 @@
     $correo = $_POST["correo"];
     $telefono = $_POST["telefono"];
     $mensaje = $_POST["mensaje"]; 
-    $id = $_POST[""];
     
-    $insertarDatos  = "INSERT INTO contacto VALUES('$id', '$nombre', '$telefono', '$correo', '$mensaje')";
+    
+    $insertarDatos  = "INSERT INTO contacto VALUES('', '$nombre', '$telefono', '$correo', '$mensaje')";
 
     $ejecutarInsertar = mysqli_query($enlace, $insertarDatos);
   }

@@ -16,15 +16,34 @@ header {
   justify-content: center;
   font-family: 'Poppins', sans-serif;
   border-bottom: 1rem solid #f39404;
+  background-color: #e4e4e4;
+}
+
+.div-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  margin-right: 25px;
+  padding: 5px 10px;
+  background-color: #212121;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: white;
+  color:black;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 h1 {
   font-size: 4rem;
-}
-
-h1 span {
-  font-size: 2rem;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 section {
@@ -56,6 +75,8 @@ table {
 .tabla-principal {
   text-align: center;
   border: 0.3rem solid #f39404;
+  background-color: #212121;
+  color: white;
 }
 
 form {
@@ -76,4 +97,16 @@ button {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.texto {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.texto span {
+  position: relative;
+  bottom: -13px;
+  font-size: 2rem;
 }

@@ -6,12 +6,12 @@
     --gris: #f4c87c;
     --grisClaro: #f4c87c;
 }
- /*Asi se comenta en css*/
+
 /*Globales*/
 html {
     font-size: 62.5%;
     box-sizing: border-box;
-    /*scroll-snap-type: y mandatory;*/
+    scroll-behavior: smooth;
 }
 /*Scroll snap*/
 .servicios,
@@ -143,7 +143,7 @@ color: var(--oscuro);
 }
 
 .img01 {
-background-image: url(../img/img01.jpg);
+background-image: url(../resources/img/img01.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 height: 450px;
